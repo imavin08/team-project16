@@ -1,10 +1,16 @@
-.rights {
+.footer-contacts {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.83;
+  text-align: right;
+}
+
+.footer-rights {
   width: 150px;
-  //   font-family: DM Sans;
-  //   font-style: normal;
-  //   font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  color: #907e82;
+  color: var(--second-text-color);
 }
