@@ -9,7 +9,7 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 1280px;
   }
 }
@@ -18,7 +18,7 @@ body {
   font-family: 'DM Sans', sans-serif, 'Titan One', cursive;
 }
 
-.hiden {
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -29,4 +29,10 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
