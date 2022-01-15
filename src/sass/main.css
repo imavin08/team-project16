@@ -3,6 +3,35 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+body {
+  font-family: 'DM Sans', sans-serif, 'Titan One', cursive;
+}
+
 p,
 h1,
 h2,
@@ -26,5 +55,13 @@ a {
 button {
   cursor: pointer;
   font-family: inherit;
+}
+
+:root {
+  --main-title-color: #d41443;
+  --second-title-color: #ffa5ba;
+  --third-title-color: #ffffff;
+  --main-text-color: #000000;
+  --second-text-color: #907e82;
 }
 /*# sourceMappingURL=main.css.map */
