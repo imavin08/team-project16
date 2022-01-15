@@ -3,6 +3,49 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+body {
+  font-family: 'DM Sans', sans-serif, 'Titan One', cursive;
+}
+
+.hiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 p,
 h1,
 h2,
@@ -28,6 +71,7 @@ button {
   font-family: inherit;
 }
 
+eature/contacts
 .contacts {
   padding-top: 86px;
   padding-bottom: 113px;
@@ -168,5 +212,27 @@ button {
   text-align: center;
   color: #d41443;
   margin-top: 10px;
+=======
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  --main-title-color: #d41443;
+  --second-title-color: #ffa5ba;
+  --third-title-color: #ffffff;
+  --main-text-color: #000000;
+  --second-text-color: #907e82;
+}
+
+.rights {
+  width: 150px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #907e82;
+ main
 }
 /*# sourceMappingURL=main.css.map */
