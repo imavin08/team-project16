@@ -101,9 +101,15 @@
   color: rgba(144, 126, 130, 1);
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .btn {
   display: block;
-  margin: 0 auto;
   width: 161px;
   height: 44px;
   background-color: rgba(212, 20, 67, 1);
@@ -132,4 +138,6 @@
   line-height: 1.31;
   text-align: center;
   color: rgba(212, 20, 67, 1);
+
+  margin-top: 10px;
 }
