@@ -1,4 +1,64 @@
-.footer-contacts {
+.footer-section {
+  background-color: #fff5f6;
+  padding-right: 20px;
+  padding-left: 20px;
+  // width: 320px;
+  // border-bottom: 1px solid #e1e1e1;
+  // border-width: 100vw;
+}
+
+// .footer-section-wrap {
+//   border-bottom: 1px solid #e1e1e1;
+// }
+
+.footer-wrap {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.footer-title-wrap {
+  width: 234px;
+  margin-bottom: 43px;
+}
+
+.footer-pre-title {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+  margin-bottom: 17px;
+}
+
+.footer-title {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 46px;
+}
+
+.footer-social-list__item {
+  &:not(:last-child) {
+    margin-right: 28px;
+  }
+}
+
+.footer-contacts-wrap {
+  text-align: right;
+  // margin-bottom: 43px;
+}
+
+.footer-contacts__text,
+.footer-contacts__tel {
   color: var(--main-text-color);
   font-weight: 700;
   font-size: 12px;
@@ -6,6 +66,11 @@
   text-align: right;
 }
 
+.footer-contacts__tel {
+  color: var(--main-title-color);
+  // display: block;
+  // padding-bottom: 43px;
+}
 .footer-rights {
   width: 150px;
   font-weight: 700;
@@ -13,4 +78,41 @@
   line-height: 1.5;
   text-align: center;
   color: var(--second-text-color);
+  padding-top: 22px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-wrap {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-wrap {
+    width: 768px;
+  }
+
+  .footer-section {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+
+  .footer-title-wrap {
+    width: 340px;
+    margin-bottom: 91px;
+  }
+
+  .footer-pre-title {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    margin-bottom: 16px;
+  }
+
+  .footer-title {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+  }
 }
