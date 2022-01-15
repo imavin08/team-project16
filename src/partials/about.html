@@ -1,1 +1,33 @@
-<h1>about</h1>
+<section class="about">
+    <div class="container about__container">
+        <p class="about__label">tradition and love</p>
+        <h2 class="about__section-title">how it’s made?</h2>
+        <picture>
+            <source 
+            srcset="
+                ./images/about/about-dt-img.png 1x, 
+                ./images/about/about-dt-img-2x.png 2x" media="(min-width: 1280px)"
+            >
+            <source 
+            srcset="
+                ./images/about/about-tab-img.png 1x, 
+                ./images/about/about-tab-img-2x.png 2x" media="(min-width: 768px)"
+            >
+            <source 
+            srcset="
+                ./images/about/about-mob-img.png 1x, 
+                ./images/about/about-mob-img-2x.png 2x" media="(min-width: 320px)"
+            >
+            <img 
+            src="./images/about/about-dt-img-2x.png" 
+            alt="корова и графин с молоком"
+            >
+        </picture>
+        <p class="about__text-first">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
+        Maecenas eleifend erat at justo fringilla.</p>
+        <p class="about__text-second">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+        </p>
+        <p class="about__text-third">Aliquam erat volutpat. Aenean accumsan.</p>
+        <button type="button" class="button about__button">Read more</button>
+    </div>
+</section>
