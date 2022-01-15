@@ -1,0 +1,111 @@
+.about {
+  background-color: #fff5f6;
+  padding-top: 125px;
+  padding-bottom: 39px;
+}
+
+.about__overlay {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/about/about-mob-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: right bottom 100px;
+  background-size: contain;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/about/about-mob-bg-img-2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: none;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/about/about-dt-bg-img.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-dt-bg-img-2x.png);
+    }
+  }
+}
+
+.about__label {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--second-title-color);
+  margin-bottom: 15px;
+}
+
+.about__section-title {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  margin-bottom: 26px;
+}
+
+.about__text-container {
+  max-width: 220px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about__text-first {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--main-text-color);
+  margin-top: 46px;
+  margin-bottom: 35px;
+}
+
+.about__text-second {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--second-text-color);
+  margin-bottom: 18px;
+}
+
+.about__text-third {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--second-text-color);
+  margin-bottom: 25px;
+}
+
+// .about__button {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+.button__read-more {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  align-items: center;
+  text-align: center;
+  color: var(--main-title-color);
+  background-color: var(--third-title-color);
+  border: 0;
+  border-radius: 22px;
+  min-width: 176px;
+  padding: 14px 38px 14px 37px;
+  transition: backgound-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.button__read-more-icon {
+  margin-left: 17px;
+}
