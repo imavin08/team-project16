@@ -1,0 +1,152 @@
+.contacts {
+  height: 100%;
+  padding-top: 86px;
+  padding-bottom: 113px;
+  background-image: linear-gradient(to bottom, #ffffff 170px, #fff5f6 1502px);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.location-item {
+  padding: 43px 20px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+.location-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.location-item__type--cafe {
+  width: 80px;
+  height: auto;
+  background: #f0d1a5;
+  border-radius: 4px;
+  margin-bottom: 25px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+
+.location-item__type--food-tuck {
+  width: 130px;
+  height: auto;
+  background: #c2e297;
+  border-radius: 4px;
+  margin-bottom: 25px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+
+.location-item__city {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #000000;
+
+  margin-bottom: 10px;
+}
+
+.location-item__description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+  margin-bottom: 25px;
+}
+
+.schedule {
+  padding: 25px 0px;
+  border-top: 1px solid rgba(225, 225, 225, 1);
+  border-bottom: 1px solid rgba(225, 225, 225, 1);
+}
+
+.schedule-weekday:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.schedule__day {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.schedule__time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: rgba(255, 165, 186, 1);
+}
+
+.location-contacts {
+  margin-top: 25px;
+}
+
+.location-contacts__item--link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(144, 126, 130, 1);
+}
+
+// .buttons {
+
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-wrap: wrap;
+// }
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 161px;
+  height: 44px;
+  background-color: rgba(212, 20, 67, 1);
+  border-radius: 22px;
+  border: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  color: #ffffff;
+
+  margin-top: 54px;
+}
+
+.btn--white {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #ffffff;
+  border: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  color: rgba(212, 20, 67, 1);
+
+  margin-top: 10px;
+}
