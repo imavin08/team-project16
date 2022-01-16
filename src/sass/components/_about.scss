@@ -2,6 +2,10 @@
   background-color: #fff5f6;
   padding-top: 125px;
   padding-bottom: 39px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
 }
 
 .about__overlay {
@@ -18,6 +22,7 @@
     background-image: none;
   }
   @media screen and (min-width: 1280px) {
+    background-position: right top 342px;
     background-image: url(../images/about/about-dt-bg-img.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/about-dt-bg-img-2x.png);
@@ -34,6 +39,17 @@
   text-transform: uppercase;
   color: var(--second-title-color);
   margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    margin-bottom: 15px;
+  }
 }
 
 .about__section-title {
@@ -46,6 +62,24 @@
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    margin-bottom: 55px;
+  }
+}
+
+.about_section-content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 
 .about__text-container {
@@ -53,6 +87,18 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
+  @media screen and (min-width: 480px) {
+    max-width: 330px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 340px;
+    margin-left: 17px;
+    padding-top: 51px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 463px;
+    margin-left: 74px;
+  }
 }
 
 .about__text-first {
@@ -62,6 +108,15 @@
   color: var(--main-text-color);
   margin-top: 46px;
   margin-bottom: 35px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
 }
 
 .about__text-second {
@@ -70,6 +125,16 @@
   line-height: 1.62;
   color: var(--second-text-color);
   margin-bottom: 18px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 1280px) {
+    line-height: 1.94;
+    margin-bottom: 44px;
+  }
 }
 
 .about__text-third {
@@ -78,12 +143,23 @@
   line-height: 1.62;
   color: var(--second-text-color);
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+    margin-bottom: 62px;
+  }
+  @media screen and (min-width: 1280px) {
+    line-height: 1.94;
+    margin-bottom: 45px;
+  }
 }
 
-// .about__button {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
+// .about__image {
+//   @media screen and (min-width: 768px) {
+//     position: absolute;
+//     top: 0;
+//   }
 // }
 
 .button__read-more {
@@ -104,8 +180,15 @@
   &:focus {
     background-color: #ecebeb;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
 }
 
 .button__read-more-icon {
   margin-left: 17px;
+  @media screen and (min-width: 768px) {
+    margin-left: 14px;
+  }
 }
