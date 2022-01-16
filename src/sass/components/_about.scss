@@ -1,10 +1,8 @@
 .about {
   background-color: #fff5f6;
   padding-top: 125px;
-  padding-bottom: 39px;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 130px;
-    padding-bottom: 66px;
   }
 }
 
@@ -155,15 +153,8 @@
   }
 }
 
-// .about__image {
-//   @media screen and (min-width: 768px) {
-//     position: absolute;
-//     top: 0;
-//   }
-// }
-
 .button__read-more {
-  font-family: inherit;
+  font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
