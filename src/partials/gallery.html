@@ -1,1 +1,14 @@
-<h1>gallery</h1>
+<h1 class="gallery_h1">gallery</h1>
+<section class="gallery_section container">
+    <picture>
+        <source srcset="./images/gallery/gallery-dt-2x.jpg 2x"
+                media="(min-width: 1280px)">
+        <source srcset="./images/gallery/gallery-tab.jpg 1x, 
+                        ./images/gallery/gallery-tab-2x.jpg 2x" 
+                media="(min-width: 768px)">
+        <source srcset="./images/gallery/gallery-mob.jpg 1x, 
+                ./images/gallery/gallery-mob-2x.jpg 2x" 
+                media="(min-width: 480px)">
+        <img src="./images/gallery/gallery-dt.jpg"  />
+    </picture>
+</section>
