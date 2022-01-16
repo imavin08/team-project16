@@ -2,7 +2,7 @@
   height: 100%;
   padding-top: 86px;
   padding-bottom: 113px;
-  background-image: linear-gradient(to bottom, #ffffff 50%, #fff5f6 50%),
+  background-image: linear-gradient(to bottom, #ffffff 21%, #fff5f6 21%),
     url(../images/contacts/sectionbg.png);
 }
 
@@ -268,4 +268,8 @@
   @media screen and (min-width: 1280px) {
     margin-top: 86px;
   }
+}
+
+.btn__icon {
+  fill: var(--third-title-color);
 }
