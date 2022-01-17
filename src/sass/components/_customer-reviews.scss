@@ -1,0 +1,192 @@
+.customer {
+    padding-top: 80px;
+}
+
+.customer-item {
+    display: block;
+    flex-direction: column;
+
+} 
+
+.customer__images {
+    margin-bottom: 29px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 19px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 15px;
+    }
+}
+
+.customer__container--text {
+    position: relative;
+    max-width: 280px;
+    padding-top: 43px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 30px;
+    background: #FAFAFA;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 54px;
+        height: 40px;
+        top: 28px;
+        left: 61px;
+        background-image: url(/images/customer/acent.png); 
+
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+            background-image: url(/images/customer/acent-2x.png);
+            }
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover; 
+    }
+
+        @media screen and (min-width: 768px) {
+            max-width: 620px;
+            padding-top: 47px;
+            padding-bottom: 34px;
+            padding-right: 80px;
+            padding-left: 80px;
+        
+            &::before {
+                top: 30px;
+                left: 40px;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            max-width: 926px;
+            padding-top: 47px;
+            padding-bottom: 39px;
+            padding-right: 89px;
+            padding-left: 87px;
+
+            &::before {
+                top: 39px;
+                left: 50px;
+            }
+    }
+    }
+
+
+.customer__text {
+    position: relative;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    max-width: 158px;
+    margin: auto;
+    color: var(--main-text-color);
+    background-image: repeating-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,0) 29px,#e1e1e1 0,#e1e1e1 30px);
+    letter-spacing: 0.04em;
+
+    @media screen and (min-width: 768px) {
+        max-width: 544px;
+        font-size: 14px;
+        line-height: 2.16;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 750px;
+        font-size: 16px;
+        line-height: 1.86;
+    }
+}
+
+.customer__container--nav {
+    &::before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 4px;
+        margin: auto;
+
+        background-image: url(/images/customer/marker-1x.png); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; 
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+            background-image: url(/images/customer/marker-2x.png);
+            }
+    }
+}
+
+.customer__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.86;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 20px;
+        line-height: 1.86;
+    }
+}
+
+
+                   /*CUSTOMER  */
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+    background-image: url(/images/customer/home.png);
+
+    @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+            background-image: url(/images/customer/home-2x.png);
+            }
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.999);
+    border-radius: 0;
+    width: 12.5px;
+    height: 11.9px;
+    margin-right: 18px;
+}
