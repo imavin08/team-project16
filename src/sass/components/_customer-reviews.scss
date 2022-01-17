@@ -2,17 +2,82 @@
     padding-top: 80px;
 }
 
+.customer-item {
+    display: block;
+    flex-direction: column;
+
+} 
+
+.customer__images {
+    margin-bottom: 29px;
+}
+
+.customer__container--text {
+    position: relative;
+    width: 100%;
+    padding-top: 43px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background: #FAFAFA;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 54px;
+        height: 40px;
+        top: 28px;
+        left: 61px;
+        background-image: url(/images/customer/acent.png); 
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover; 
+    }
+}
+
 .customer__text {
+    position: relative;
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
-
-
+    width: 158px;
     text-align: center;
-
-
+    margin: auto;
     color: var(--main-text-color);
+    background-image: repeating-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,0) 29px,#e1e1e1 0,#e1e1e1 30px);
+    letter-spacing: .04em;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
