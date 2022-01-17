@@ -1,9 +1,14 @@
+ feature/hero-header
 <section class="about" >
     <a name="about"></a>
+
+<section class="about about__overlay">
+ main
     <div class="container about__container">
         <p class="about__label">tradition and love</p>
         <a name="made"></a>
         <h2 class="about__section-title">how it’s made?</h2>
+ feature/hero-header
         <!-- <picture> 
             <source 
             srcset="
@@ -31,5 +36,46 @@
         </p>
         <p class="about__text-third">Aliquam erat volutpat. Aenean accumsan.</p>
         <button type="button" class="button about__button">Read more</button>
+
+        <div class="about_section-content">
+            <div class="about__image-container">
+                <picture class="about__image">
+                    <source 
+                    srcset="
+                        ./images/about/about-dt-img.png 1x, 
+                        ./images/about/about-dt-img-2x.png 2x" media="(min-width: 1280px)"
+                    >
+                    <source 
+                    srcset="
+                        ./images/about/about-tab-img.png 1x, 
+                        ./images/about/about-tab-img-2x.png 2x" media="(min-width: 768px)"
+                    >
+                    <source 
+                    srcset="
+                        ./images/about/about-mob-img.png 1x, 
+                        ./images/about/about-mob-img-2x.png 2x" media="(min-width: 320px)"
+                    >
+                    <img 
+                    src="./images/about/about-dt-img-2x.png" 
+                    alt="корова и графин с молоком"
+                    >
+                </picture>
+            </div>
+            <div class="about__text-container">
+                <p class="about__text-first">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
+                    Maecenas eleifend erat at justo fringilla.</p>
+                <p class="about__text-second">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+                </p>
+                <p class="about__text-third">Aliquam erat volutpat. Aenean accumsan.</p>
+                <div class="about__button button">
+                    <button type="button" class="button__read-more">Read more
+                        <svg class="button__read-more-icon" width="5" height="8">
+                            <use href="./images/symbol-defs.svg#vector"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+ main
     </div>
 </section>
