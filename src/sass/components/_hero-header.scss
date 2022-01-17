@@ -512,6 +512,10 @@ text-align: center;
     z-index: -1;
     top: 0;
     right: 0;
+    @media screen and (min-width: 1280px) {
+        width: 30px;
+        height: 30px;
+      }
 }
 .hh__numbers {
     font-family: 'Titan One';
@@ -534,6 +538,8 @@ text-align: center;
     line-height: 1.25; 
     display: block;   
     color: #ffffff;
+    display: flex;
+    justify-content: center;
     @media screen and (min-width: 1280px) {
         font-size: 14px;
       }
