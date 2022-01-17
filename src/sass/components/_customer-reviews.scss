@@ -19,6 +19,7 @@
     padding-bottom: 20px;
     padding-right: 50px;
     padding-left: 50px;
+    margin-bottom: 30px;
     background: #FAFAFA;
 
     &::before {
@@ -46,9 +47,33 @@
     color: var(--main-text-color);
     background-image: repeating-linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,0) 29px,#e1e1e1 0,#e1e1e1 30px);
     letter-spacing: .04em;
-
 }
 
+.customer__container--nav {
+    &::before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 4px;
+       /*  margin-bottom: 18px; */
+        margin: auto;
+
+        background-image: url(/images/customer/marker-1x.png); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; 
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+            background-image: url(/images/customer/marker-2x.png);
+            }
+    }
+}
+
+.customer__name {
+    margin-top: 18px;
+    margin-bottom: 60px;
+}
 
 
 
