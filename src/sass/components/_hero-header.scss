@@ -1,5 +1,5 @@
 a.current {
-  color: #d41443;
+color: #d41443;
 }
 
 .menu__modal {
@@ -88,7 +88,7 @@ a.current {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
-  transition-property: all;
+  transition-property: background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
@@ -215,7 +215,7 @@ a.current {
     width: 159px;
     height: 44px;
   }
-  transition-property: all;
+  transition-property: background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
@@ -345,7 +345,7 @@ a.current {
      @media screen and (min-width: 1280px) {
         width: 104px;
     }
-    transition-property: all;
+    transition-property: background-color;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #d41443;
@@ -359,7 +359,7 @@ a.current {
         width: 138px;
     }
     background-color: #ffffff;
-    transition-property: all;
+    transition-property: background-color;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:focus, &:hover {
@@ -393,7 +393,7 @@ a.current {
 
 .false-btn__li--pink {
   background-color: #d41443;
-  transition-property: all;
+  transition-property: background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
@@ -403,7 +403,7 @@ a.current {
 }
 .false-btn__li--white {
   background-color: #ffffff;
-  transition-property: all;
+  transition-property: background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
@@ -505,7 +505,7 @@ a.current {
     display: flex;
     justify-content: center;
   }
-  transition-property: all;
+  transition-property: background-color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
