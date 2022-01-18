@@ -114,7 +114,7 @@ a.current {
 .section__hh {
   background-color: #ffb8ca;
   overflow: hidden;
-  padding-bottom: 8px;
+  
  
 }
 
@@ -240,7 +240,7 @@ a.current {
 .wrap--one--b {
   display: flex;
   align-items: flex-end;
-  // margin-bottom: 28px;
+  padding-bottom: 45px;
 }
 
 .wrap--one--c {
@@ -432,10 +432,14 @@ line-height: 1.3;
   @media screen and (min-width: 768px) {
     display: block;
     width: 168px;
+    position: absolute;
+    bottom: 0;
+    right: 34px;
    
   }
   @media screen and (min-width: 1280px) {
     width: 293px;
+    right: 110px;
   }
 }
 
