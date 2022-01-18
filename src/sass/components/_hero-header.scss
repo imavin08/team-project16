@@ -13,6 +13,7 @@ a.current {
   @media screen and (min-width: 768px) {
     width: 40vw;
     right: 0;
+    position: fixed;
   }
   @media screen and (min-width: 1280px) {
     display: none;
@@ -32,6 +33,12 @@ a.current {
 
   padding-top: 10px;
   padding-bottom: 10px;
+
+
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   color: #ffffff;
   &:focus,
   &:hover {
@@ -86,7 +93,9 @@ a.current {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
-
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
     background-color: #ecebeb;
@@ -194,6 +203,9 @@ a.current {
     line-height: 1.27;
     padding: 10px;
     color: #ffffff;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &:focus,
   &:hover {
@@ -212,7 +224,9 @@ a.current {
     width: 159px;
     height: 44px;
   }
-
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
     background-color: #ecebeb;
@@ -348,6 +362,9 @@ a.current {
      @media screen and (min-width: 1280px) {
         width: 104px;
     }
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #d41443;
     &:focus, &:hover {
         background-color: #c7133e;
@@ -359,6 +376,9 @@ a.current {
         width: 138px;
     }
     background-color: #ffffff;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:focus, &:hover {
         background-color: #ecebeb;
     }
@@ -367,6 +387,9 @@ a.current {
 
 .false-btn__li--pink {
   background-color: #d41443;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
     background-color: #c7133e;
@@ -374,6 +397,9 @@ a.current {
 }
 .false-btn__li--white {
   background-color: #ffffff;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
     background-color: #ecebeb;
@@ -478,6 +504,9 @@ a.current {
     display: flex;
     justify-content: center;
   }
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
     background-color: #ecebeb;
