@@ -11,7 +11,7 @@ a.current {
   z-index: 2;
   height: 100vh;
   @media screen and (min-width: 768px) {
-    width: 30vw;
+    width: 40vw;
     right: 0;
   }
   @media screen and (min-width: 1280px) {
@@ -114,6 +114,7 @@ a.current {
 .header {
   background-color: #ffb8ca;
   overflow: hidden;
+  padding-bottom: 8px;
 }
 
 .hh__container {
@@ -121,6 +122,7 @@ a.current {
   z-index: 1;
   @media screen and (max-width: 767px) {
     padding-top: 8px;
+    
     min-height: 500px;
   }
   @media screen and (min-width: 768px) {
@@ -141,9 +143,10 @@ a.current {
 .logo {
   display: flex;
   align-items: center;
-  @media screen and (min-width: 1280px) {
-    margin-right: 110px;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   margin-right: 110px;
+  // }
+  
 }
 .logo__icon {
   fill: #ffffff;
@@ -178,6 +181,7 @@ a.current {
   @media screen and (min-width: 1280px) {
     &:not(:last-child) {
       margin-right: 35px;
+      padding: 10px;
     }
   }
 }
@@ -237,12 +241,18 @@ a.current {
 .wrap--one--b {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 28px;
+  // margin-bottom: 28px;
 }
 
 .wrap--one--c {
   display: flex;
   align-items: flex-end;
+}
+
+.hh__box--a {
+@media screen and (min-width: 1280px) {
+    margin-left: 95px;
+  }
 }
 
 .hh__title {
@@ -265,7 +275,7 @@ a.current {
         font-size: 22px;
      }
      @media screen and (min-width: 1280px) {
-        margin-left: 95px; 
+        // margin-left: 95px; 
         font-size: 38px;
      }
     
@@ -316,10 +326,9 @@ a.current {
 
 .false-btn__ul {
   display: flex;
+  margin-top: 20px;
 
-  @media screen and (min-width: 1280px) {
-    margin-left: 95px;
-  }
+  
 }
 .false-btn__li {
 
@@ -327,7 +336,7 @@ a.current {
 justify-content: center;
 align-items: center;
     height: 24px;
-    margin-top: 20px;
+    
     border-radius: 20px;
     @media screen and (min-width: 1280px) {
         height: 40px;
@@ -424,6 +433,7 @@ line-height: 1.3;
   @media screen and (min-width: 768px) {
     display: block;
     width: 168px;
+   
   }
   @media screen and (min-width: 1280px) {
     width: 293px;
@@ -459,8 +469,8 @@ line-height: 1.3;
     line-height: 1.5;
     color: #ffffff;
     max-width: 114px;
-    margin-left: 6px;
-    margin-bottom: 7px;
+    // margin-left: 6px;
+    // margin-bottom: 7px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 200px;
@@ -482,6 +492,11 @@ line-height: 1.3;
     display: flex;
     justify-content: center;
   }
+  &:focus,
+  &:hover {
+    background-color: #ecebeb;
+  }
+
 }
 .hh__icon--right {
   fill: #d41443;
