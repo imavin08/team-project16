@@ -90,6 +90,7 @@
 }
 
 .products__name {
+  transform: rotate(360deg);
   position: relative;
   margin-bottom: 66px;
   font-family: Titan One;
@@ -290,6 +291,11 @@
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid transparent;
+  transition: background-color 500ms linear, transform 500ms ease-in-out;
+  &:hover {
+    background-color: rgb(174, 178, 179);
+    transform: rotate(360deg);
+  }
 }
 
 .products__btn--icon {
