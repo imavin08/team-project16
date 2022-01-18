@@ -35,7 +35,7 @@ a.current {
   padding-bottom: 10px;
 
 
-  transition-property: all;
+  transition-property: color;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -194,7 +194,7 @@ a.current {
     line-height: 1.27;
     padding: 10px;
     color: #ffffff;
-    transition-property: all;
+    transition-property: color;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -339,6 +339,7 @@ a.current {
         margin-left: 8px;
     }
  }
+
  .false-btn__li--pink {
      width: 63px;
      @media screen and (min-width: 1280px) {
@@ -366,14 +367,7 @@ a.current {
     }
  }
 
-  border-radius: 20px;
-  @media screen and (min-width: 1280px) {
-    height: 40px;
-  }
-  &:last-child {
-    margin-left: 8px;
-  }
-}
+  
 .false-btn__li--pink {
   width: 63px;
   @media screen and (min-width: 1280px) {
