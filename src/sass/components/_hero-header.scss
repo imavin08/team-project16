@@ -9,7 +9,7 @@ a.current {
   position: absolute;
   width: 100vw;
   z-index: 2;
-  height: 100vh;
+  height: 100vmax;
   @media screen and (min-width: 768px) {
     width: 40vw;
     right: 0;
@@ -168,7 +168,6 @@ a.current {
   display: none;
   @media screen and (min-width: 1280px) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 }
