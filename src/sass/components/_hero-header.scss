@@ -9,9 +9,9 @@ a.current {
   position: absolute;
   width: 100vw;
   z-index: 2;
-  height: 100vh;
+  height: 100vmax;
   @media screen and (min-width: 768px) {
-    width: 30vw;
+    width: 40vw;
     right: 0;
   }
   @media screen and (min-width: 1280px) {
@@ -79,12 +79,8 @@ a.current {
   border: none;
   color: #d41443;
 
-  margin-left: 30px;
+  
 
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
 
   font-family: 'DM Sans';
   font-weight: 700;
@@ -115,9 +111,11 @@ a.current {
   height: 18px;
 }
 
-.header {
+.section__hh {
   background-color: #ffb8ca;
   overflow: hidden;
+  
+ 
 }
 
 .hh__container {
@@ -125,6 +123,7 @@ a.current {
   z-index: 1;
   @media screen and (max-width: 767px) {
     padding-top: 8px;
+    
     min-height: 500px;
   }
   @media screen and (min-width: 768px) {
@@ -148,6 +147,7 @@ a.current {
   @media screen and (min-width: 1280px) {
     margin-right: 110px;
   }
+  
 }
 .logo__icon {
   fill: #ffffff;
@@ -168,7 +168,6 @@ a.current {
   display: none;
   @media screen and (min-width: 1280px) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 }
@@ -182,6 +181,7 @@ a.current {
   @media screen and (min-width: 1280px) {
     &:not(:last-child) {
       margin-right: 35px;
+      
     }
   }
 }
@@ -192,7 +192,7 @@ a.current {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.27;
-
+    padding: 10px;
     color: #ffffff;
   }
   &:focus,
@@ -209,10 +209,8 @@ a.current {
     display: flex;
     justify-content: center;
 
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    width: 159px;
+    height: 44px;
   }
 
   &:focus,
@@ -241,12 +239,18 @@ a.current {
 .wrap--one--b {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 28px;
+  padding-bottom: 45px;
 }
 
 .wrap--one--c {
   display: flex;
   align-items: flex-end;
+}
+
+.hh__box--a {
+@media screen and (min-width: 1280px) {
+    margin-left: 95px;
+  }
 }
 
 .hh__title {
@@ -260,6 +264,7 @@ a.current {
     text-transform: uppercase;
     color: #ffffff;
     
+    
     @media screen and (max-width: 767px) {
        margin-top: 136px; 
     }
@@ -268,7 +273,7 @@ a.current {
         font-size: 22px;
      }
      @media screen and (min-width: 1280px) {
-        margin-left: 95px; 
+        // margin-left: 95px; 
         font-size: 38px;
      }
     
@@ -303,7 +308,7 @@ a.current {
     margin-top: 15px;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: 95px;
+    
     font-size: 38px;
   }
 }
@@ -319,18 +324,17 @@ a.current {
 
 .false-btn__ul {
   display: flex;
+  margin-top: 20px;
 
-  @media screen and (min-width: 1280px) {
-    margin-left: 95px;
-  }
+  
 }
 .false-btn__li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    display: flex;
-justify-content: center;
-align-items: center;
     height: 24px;
-    margin-top: 20px;
+    
     border-radius: 20px;
     @media screen and (min-width: 1280px) {
         height: 40px;
@@ -360,27 +364,7 @@ align-items: center;
     }
  }
 
-.false-btn__link {
-    font-family: 'DM Sans';
-font-style: normal;
-font-size: 8px;
-line-height: 1.3;
 
-
-
-@media screen and (min-width: 1280px) {
-     
-
-  margin-top: 20px;
-  border-radius: 20px;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 14px;
-  padding-right: 14px;
-  &:last-child {
-    margin-left: 8px;
-  }
-}
 .false-btn__li--pink {
   background-color: #d41443;
   &:focus,
@@ -405,10 +389,11 @@ line-height: 1.3;
   align-items: center;
   text-align: center;
   @media screen and (min-width: 1280px) {
-
+  border-radius: 20px;
     font-size: 14px;
   }
 }
+
 .false-btn__link--white {
 
     color: #ffffff;
@@ -430,9 +415,14 @@ line-height: 1.3;
   @media screen and (min-width: 768px) {
     display: block;
     width: 168px;
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+   
   }
   @media screen and (min-width: 1280px) {
     width: 293px;
+    right: 110px;
   }
 }
 
@@ -465,8 +455,8 @@ line-height: 1.3;
     line-height: 1.5;
     color: #ffffff;
     max-width: 114px;
-    margin-left: 6px;
-    margin-bottom: 7px;
+    // margin-left: 6px;
+    // margin-bottom: 7px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 200px;
@@ -488,6 +478,11 @@ line-height: 1.3;
     display: flex;
     justify-content: center;
   }
+  &:focus,
+  &:hover {
+    background-color: #ecebeb;
+  }
+
 }
 .hh__icon--right {
   fill: #d41443;
@@ -591,24 +586,25 @@ line-height: 1.3;
   width: 100vw;
   height: 100vh;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 6;
 
-  background: #ecebeb;
+  background: rgba(177, 161, 171, 0.39);
+ 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  .modal__img {
-    width: 383px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+ 
 }
-
+.modal__img {
+  width: 383px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .wrap--one {
   @media screen and (max-width: 767px) {
     display: none;
@@ -617,12 +613,10 @@ line-height: 1.3;
   display: flex;
   justify-content: space-between;
 }
-
 .wrap--two {
   @media screen and (max-width: 767px) {
     display: none;
   }
-
   @media screen and (min-width: 768px) {
     position: relative;
     z-index: 2;
