@@ -111,10 +111,11 @@ a.current {
   height: 18px;
 }
 
-.header {
+.section__hh {
   background-color: #ffb8ca;
   overflow: hidden;
   padding-bottom: 8px;
+ 
 }
 
 .hh__container {
@@ -143,9 +144,9 @@ a.current {
 .logo {
   display: flex;
   align-items: center;
-  // @media screen and (min-width: 1280px) {
-  //   margin-right: 110px;
-  // }
+  @media screen and (min-width: 1280px) {
+    margin-right: 110px;
+  }
   
 }
 .logo__icon {
@@ -181,7 +182,7 @@ a.current {
   @media screen and (min-width: 1280px) {
     &:not(:last-child) {
       margin-right: 35px;
-      padding: 10px;
+      
     }
   }
 }
@@ -192,7 +193,7 @@ a.current {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.27;
-
+    padding: 10px;
     color: #ffffff;
   }
   &:focus,
@@ -209,10 +210,8 @@ a.current {
     display: flex;
     justify-content: center;
 
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    width: 159px;
+    height: 44px;
   }
 
   &:focus,
