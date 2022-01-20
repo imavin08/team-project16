@@ -11,7 +11,8 @@
   margin-right: auto;
   background-image: url(../images/about/about-mob-bg-img.png);
   background-repeat: no-repeat;
-  background-position: right bottom 100px;
+  background-position-x: 50%;
+  background-position-y: 93%;
   background-size: contain;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/about/about-mob-bg-img-2x.png);
@@ -20,7 +21,8 @@
     background-image: none;
   }
   @media screen and (min-width: 1280px) {
-    background-position: right top 342px;
+    background-position-x: center;
+    background-position-y: 87%;
     background-image: url(../images/about/about-dt-bg-img.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/about/about-dt-bg-img-2x.png);
@@ -91,11 +93,21 @@
   @media screen and (min-width: 768px) {
     max-width: 340px;
     margin-left: 17px;
+    margin-right: 0;
     padding-top: 51px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 463px;
     margin-left: 74px;
+  }
+}
+
+.about__image-container {
+  @media screen and (min-width: 1280px) {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      transform: scale(1.15);
+    }
   }
 }
 
@@ -166,7 +178,7 @@
   border-radius: 22px;
   min-width: 176px;
   padding: 14px 38px 14px 37px;
-  transition: backgound-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #ecebeb;
