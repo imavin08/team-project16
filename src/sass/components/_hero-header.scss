@@ -3,22 +3,31 @@ a.current {
 }
 
 .menu__modal {
+  &.is-hidden {
+    right: -100%;
+  }
   padding-top: 60px;
 
   background-color: #e17992;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   z-index: 2;
   height: 100vmax;
+  right: 0;
+  transition: all 450ms linear;
   @media screen and (min-width: 768px) {
     width: 40vw;
     right: 0;
-    position: fixed;
+    
+   
+  
   }
   @media screen and (min-width: 1280px) {
     display: none;
   }
 }
+
+
 
 .menu__ul {
   margin-top: 32px;
@@ -62,12 +71,14 @@ a.current {
     display: none;
   }
 }
+
+
 .menu__btn--main {
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 22px;
 
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 30px;
+  
 
   height: 44px;
   width: 209px;
@@ -95,6 +106,10 @@ a.current {
   &:hover {
     background-color: #ecebeb;
   }
+}
+.btn--mob {
+  margin-left: auto;
+  margin-right: auto;
 }
 .menu__icon--right {
   fill: #d41443;
@@ -212,8 +227,8 @@ a.current {
     display: flex;
     justify-content: center;
 
-    width: 159px;
-    height: 44px;
+    min-width: 159px;
+    min-height: 44px;
   }
   transition-property: all;
   transition-duration: 500ms;
@@ -254,7 +269,9 @@ a.current {
 
 .hh__box--a {
   @media screen and (min-width: 1280px) {
-    margin-left: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -449,7 +466,7 @@ a.current {
   }
   @media screen and (min-width: 1280px) {
     width: 293px;
-    right: 110px;
+    right: 0;
   }
 }
 
@@ -536,8 +553,8 @@ a.current {
   }
 
   @media screen and (min-width: 1280px) {
-    width: 538px;
-    height: 538px;
+    width: 545px;
+    height: 545px;
     top: 56px;
     right: 220px;
   }
@@ -550,12 +567,12 @@ a.current {
     margin-top: 10px;
   }
   @media screen and (min-width: 768px) {
-    width: 143px;
+    width: 146px;
     margin-top: 72px;
     margin-left: 72px;
   }
   @media screen and (min-width: 1280px) {
-    width: 236px;
+    width: 246px;
     margin-top: 56px;
     margin-left: 119px;
   }
