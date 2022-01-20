@@ -163,6 +163,7 @@ a.current {
   align-items: center;
   @media screen and (min-width: 1280px) {
     margin-right: 110px;
+    margin-left: -46px;
   }
 }
 .logo__icon {
@@ -230,6 +231,12 @@ a.current {
     min-width: 159px;
     min-height: 44px;
   }
+
+
+  @media screen and (min-width: 1280px) {
+  margin-left: auto;
+  }
+
   transition-property: all;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
